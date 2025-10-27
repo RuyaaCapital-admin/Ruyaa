@@ -17,7 +17,7 @@ export default function ContactSection() {
           whileInView="visible"
           viewport={{ once: true, margin: "-20%" }}
         >
-          Talk to an engineer.
+          Tell us what to ship first.
         </motion.h3>
 
         <motion.p
@@ -28,10 +28,9 @@ export default function ContactSection() {
           custom={1}
           viewport={{ once: true, margin: "-20%" }}
         >
-          Two things we want from you: what’s the bottleneck,
-          and where do you want the agent to live (WhatsApp, internal,
-          finance ops, etc.). We’ll tell you if automation is real or fake
-          for your case.
+          Brief us on the bottleneck and preferred channels (WhatsApp, web,
+          CRM, internal tools). We’ll assess feasibility and propose a
+          phased rollout.
         </motion.p>
 
         <motion.form
@@ -51,7 +50,7 @@ export default function ContactSection() {
           </div>
 
           <div className="flex flex-col">
-            <label className="text-sm text-neutral-300 mb-2">Company</label>
+            <label className="text-sm text-neutral-300 mb-2">Company / Org</label>
             <input
               className="bg-white/[0.03] border border-white/10 rounded-lg px-4 py-3 text-sm text-white outline-none focus:border-white/30"
               placeholder="Company / Project"
@@ -59,9 +58,7 @@ export default function ContactSection() {
           </div>
 
           <div className="flex flex-col sm:col-span-2">
-            <label className="text-sm text-neutral-300 mb-2">
-              WhatsApp / Direct line
-            </label>
+            <label className="text-sm text-neutral-300 mb-2">WhatsApp / Direct line</label>
             <input
               className="bg-white/[0.03] border border-white/10 rounded-lg px-4 py-3 text-sm text-white outline-none focus:border-white/30"
               placeholder="+971..."
@@ -75,7 +72,7 @@ export default function ContactSection() {
             <textarea
               rows={4}
               className="bg-white/[0.03] border border-white/10 rounded-lg px-4 py-3 text-sm text-white outline-none focus:border-white/30 resize-none"
-              placeholder="Example: WhatsApp support for car rental inquiries, send price list, confirm driver, collect ID..."
+              placeholder="Example: Launch AI agent for inbound leads, sync to CRM, build KPI dashboard, and ship landing page."
             />
           </div>
 

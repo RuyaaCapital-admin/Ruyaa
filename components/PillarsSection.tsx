@@ -5,19 +5,34 @@ import { fadeUp } from "@/lib/motion";
 
 const pillars = [
   {
-    title: "Support / Client Handling",
-    desc: "24/7 front-line agent. Answers, qualifies, updates status, books next step. Runs on WhatsApp, web, or internal dashboard.",
-    metric: "↓ response time / ↓ human load",
+    title: "Autonomous AI Agents",
+    desc: "Deploy agents for support, sales, onboarding, and ops across WhatsApp, web, and internal tools.",
+    metric: "↓ response time / ↑ throughput",
   },
   {
-    title: "Finance / Collections / Ops",
-    desc: "Chases unpaid invoices, confirms payments, updates sheets/CRM, sends reminders, tracks proof. Zero emotion. Zero delay.",
-    metric: "Faster cash recovery",
+    title: "CRM & Pipeline Automation",
+    desc: "Custom CRM flows, lead scoring, follow‑ups, enrichment, and bi‑directional sync with your stack.",
+    metric: "↑ conversion consistency",
   },
   {
-    title: "Onboarding / Compliance",
-    desc: "Collects IDs, docs, contracts, signatures, rental details, KYC info — and organizes it clean for you.",
-    metric: "Audit-ready trail",
+    title: "Analytics Dashboards",
+    desc: "Operational dashboards with KPIs, alerts, and audit logs. Single source of truth for decisions.",
+    metric: "Data you can trust",
+  },
+  {
+    title: "Website & Landing Pages",
+    desc: "Fast, conversion‑focused sites with A/B testing hooks and analytics. Built for speed and SEO.",
+    metric: "↑ qualified leads",
+  },
+  {
+    title: "Integrations & Automations",
+    desc: "Wire into your ERP, payments, email, WhatsApp, and data warehouse with reliability and observability.",
+    metric: "Fewer manual steps",
+  },
+  {
+    title: "Compliance & Governance",
+    desc: "KYC, PII handling, consent tracking, audit logs, and role‑based controls baked into workflows.",
+    metric: "Lower risk, clear trail",
   },
 ];
 
@@ -32,10 +47,10 @@ export default function PillarsSection() {
           whileInView="visible"
           viewport={{ once: true, margin: "-20%" }}
         >
-          Deployed Agents (Today)
+          Services
         </motion.h2>
 
-        <div className="grid gap-6 lg:grid-cols-3">
+        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {pillars.map((p, i) => (
             <motion.div
               key={p.title}
