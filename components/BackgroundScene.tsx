@@ -3,10 +3,11 @@
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls } from "@react-three/drei";
 import { useRef } from "react";
+import type { Points } from "three";
 
 function Particles() {
   // minimal placeholder geometry. We'll later replace with shader-based field.
-  const ref = useRef<THREE.Points>(null);
+  const ref = useRef<Points>(null);
   const points = new Float32Array(
     Array.from({ length: 500 }).flatMap(() => [
       (Math.random() - 0.5) * 6,
@@ -18,12 +19,7 @@ function Particles() {
   return (
     <points ref={ref}>
       <bufferGeometry>
-        <bufferAttribute
-          attach="attributes-position"
-          count={points.length / 3}
-          array={points}
-          itemSize={3}
-        />
+        <bufferAttribute attach="attributes-position" args={[points, 3]} />
       </bufferGeometry>
       <pointsMaterial size={0.015} color={"white"} transparent opacity={0.4} />
     </points>
