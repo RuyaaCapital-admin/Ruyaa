@@ -15,13 +15,10 @@ export default function NarrativeSection() {
           viewport={{ once: true, margin: "-20%" }}
         >
           <p>
-            You don’t need “another chatbot.”
-            You need a reliable AI workforce
-            that actually does the work:
-            answers clients, qualifies leads,
-            sends follow-ups, collects documents,
-            pushes updates, closes tickets,
-            and never goes offline.
+            You don’t need “another chatbot.” You need applied AI that ships
+            outcomes: agents that operate across channels, a CRM that keeps
+            pipeline current, dashboards that expose truth, and sites that
+            convert. All wired to your workflows.
           </p>
         </motion.div>
 
@@ -34,14 +31,14 @@ export default function NarrativeSection() {
           viewport={{ once: true, margin: "-20%" }}
         >
           <p className="mb-6">
-            RuyaaCapital deploys production-grade AI agents into
-            high-friction channels (WhatsApp, internal ops, finance,
-            government services, rental logistics). These agents follow
-            your rules, log everything, and report to you.
+            RuyaaCapital delivers end‑to‑end AI services: autonomous agents,
+            CRM workflows, analytics dashboards, website experiences, and
+            systems integrations. We follow your rules, log everything,
+            and report to you.
           </p>
           <p>
-            This is not demo tech. This is headcount replacement,
-            response-time compression, and zero-excuse accountability.
+            Not demo tech — real operational lift: faster response, higher
+            conversion, cleaner data, accountable automation.
           </p>
         </motion.div>
       </div>

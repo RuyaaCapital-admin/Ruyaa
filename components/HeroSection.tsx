@@ -17,7 +17,7 @@ export default function HeroSection() {
           animate="visible"
           custom={0}
         >
-          AI Workforce for Your Business.
+          RuyaaCapital — AI Agents & Business Services
         </motion.h1>
 
         <motion.p
@@ -27,10 +27,8 @@ export default function HeroSection() {
           animate="visible"
           custom={1}
         >
-          We deploy autonomous AI agents that handle support, sales,
-          finance, onboarding, and compliance — inside WhatsApp,
-          your internal systems, and your workflow. No fluff.
-          Only measurable output.
+          Production-grade AI for revenue and ops: autonomous agents, CRM, analytics dashboards,
+          and high‑performing websites. Built to integrate with your stack and deliver measurable outcomes.
         </motion.p>
 
         <motion.div
@@ -44,7 +42,7 @@ export default function HeroSection() {
             href="#contact"
             className="inline-block rounded-full border border-white/20 bg-white/10 px-6 py-3 text-sm font-medium text-white backdrop-blur-sm hover:bg-white hover:text-black transition"
           >
-            Talk to an Engineer
+            Start a Project
           </a>
         </motion.div>
       </div>
